@@ -1,0 +1,109 @@
+<div class="contactPage">
+  <div class="container">
+    <div class="col-12 col-md-6 col-lg-6 col-xl-6 contactDiv">
+      <h2>Let Us Build Your Business</h2>
+      <p>
+        Whether you’re looking to develop a new product, enhance an existing
+        system, or explore how technology can transform your business, our team
+        is here to help. <br />
+        <span>Contact Us</span>
+      </p>
+    </div>
+    <div class="col-12 col-md-6 col-lg-6 col-xl-6 contactFormDiv">
+      <div class="contactUs">
+        <div>
+          <label for="" class="contactLabel">Contact us</label>
+        </div>
+        <form
+          action=""
+          class="contactForm"
+          [formGroup]="contactForm"
+          (ngSubmit)="contact()"
+        >
+          <div>
+            <label for="">First name</label>
+            <div>
+              <input
+                type="text"
+                placeholder="First name"
+                formControlName="firstName"
+              />
+              @if (contactForm.get('firstName')?.hasError('required') &&
+              submitted) {
+              <div class="errMsg">* First name is required.</div>
+              }
+            </div>
+          </div>
+          <div>
+            <label for="">Last name</label>
+            <div>
+              <input
+                type="text"
+                placeholder="Last name"
+                formControlName="lastName"
+              />
+              @if (contactForm.get('lastName')?.hasError('required') &&
+              submitted){
+              <div class="errMsg">* Last name is required</div>
+              }
+            </div>
+          </div>
+          <div>
+            <label for="">Phone</label>
+            <div>
+              <input type="text" placeholder="Phone" formControlName="phone" />
+              @if (contactForm.get('phone')?.hasError('required') && submitted){
+              <div class="errMsg">* Phone number is required</div>
+              }
+            </div>
+          </div>
+          <div>
+            <label for="">Email</label>
+            <div>
+              <input type="text" placeholder="Email" formControlName="email" />
+              @if(contactForm.get('email')?.hasError('required') && submitted){
+              <div class="errMsg">* Email is required</div>
+              } @if(contactForm.get('email')?. hasError('pattern') &&
+              submitted){
+              <div class="errMsg">* Email is invalid</div>
+              }
+            </div>
+          </div>
+          <div>
+            <label for="">Country</label>
+            <div>
+              <select id="country" formControlName="country">
+                <option value="" disabled hidden>Country</option>
+                <option
+                  *ngFor="let country of countries"
+                  [value]="country.name"
+                >
+                  {{ country.name }}
+                </option>
+              </select>
+              @if(contactForm.get('country')?.hasError('required') &&
+              submitted){
+              <div class="errMsg">* Country is required</div>
+              }
+            </div>
+          </div>
+          <div>
+            <label for="">Message</label>
+            <div>
+              <textarea
+                name=""
+                id=""
+                rows="3"
+                placeholder="Message"
+                formControlName="message"
+              ></textarea>
+            </div>
+          </div>
+          <div class="sendBtnDiv">
+            <button class="sendBtn" type="submit">Send</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

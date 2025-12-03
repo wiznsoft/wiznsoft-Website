@@ -1,0 +1,135 @@
+@use "../../variable.scss" as *;
+.contactPage {
+  background-color: white;
+  width: 100%;
+  padding-top: 56px;
+  background-image: url("/images/contact.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  .container {
+    display: flex;
+    @include ipadpro() {
+      max-width: unset;
+    }
+    @include ipad() {
+      max-width: unset;
+    }
+    @include tablet() {
+      display: unset;
+    }
+    @include mobile() {
+      display: unset;
+    }
+  }
+  label {
+    color: white;
+    margin-top: 20px;
+  }
+  .contactDiv {
+    display: flex;
+    align-items: center;
+    @include tablet() {
+      display: unset;
+    }
+    @include mobile() {
+      display: unset;
+    }
+    h2 {
+      color: white;
+      @include ipadpro() {
+        padding: 20px;
+      }
+      @include ipad() {
+        padding: 20px;
+      }
+      @include tablet() {
+        padding: 20px;
+      }
+      @include mobile() {
+        padding: 20px;
+      }
+    }
+    p {
+      color: white;
+      padding: 0 10px;
+      @include ipad() {
+        padding: 0 20px;
+      }
+      @include ipad() {
+        padding: 0 20px;
+      }
+      @include tablet() {
+        padding: 0 20px;
+      }
+      @include mobile() {
+        padding: 0 20px;
+      }
+      span {
+        font-size: 20px;
+        font-weight: bold;
+        padding: 0 5px;
+        // @include ipad() {
+        //   display: none;
+        // }
+        @include tablet() {
+          display: none;
+        }
+        @include mobile() {
+          display: none;
+        }
+      }
+    }
+  }
+  .contactFormDiv {
+    display: flex;
+    justify-content: center;
+    .contactLabel {
+      font-size: 20px;
+      text-align: center;
+      font-weight: 500;
+      padding: 0 0 20px 10px;
+    }
+    .contactForm {
+      padding: 30px;
+      background-color: black;
+      margin-bottom: 30px;
+      input,
+      select,
+      textarea {
+        width: 350px;
+        margin-top: 5px;
+        padding: 8px 10px;
+        border: none;
+        border-radius: 6px;
+        resize: none;
+        @include ipad() {
+          width: 300px;
+        }
+        @include mobile() {
+          width: 250px;
+        }
+        &:focus-visible {
+          outline: none;
+        }
+      }
+      .sendBtnDiv {
+        display: flex;
+        justify-content: end;
+        margin-top: 10px;
+        .sendBtn {
+          background-color: #025ead;
+          padding: 6px 20px;
+          border: none;
+          border-radius: 6px;
+          color: white;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+  .errMsg {
+    color: white;
+    font-size: 12px;
+    margin-top: 5px;
+  }
+}

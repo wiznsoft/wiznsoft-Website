@@ -1,0 +1,72 @@
+@use "../../variable.scss" as *;
+.topnavPage {
+  background: #ffffff;
+  box-shadow: 0 -8px 14px rgba(0, 0, 0, 0.2509803922);
+  position: fixed;
+  width: 100%;
+  z-index: 9;
+  .bgcolor {
+    background-color: #000000 !important;
+  }
+  .navbarWidth {
+    width: 80%;
+    @include ipad() {
+      width: 100%;
+    }
+    @include tablet() {
+      width: 100%;
+    }
+    @include mobile() {
+      width: 100%;
+    }
+  }
+  #navbarNavAltMarkup {
+    justify-content: end;
+  }
+  ul {
+    padding: 0;
+    @include ipad() {
+      width: 288px !important;
+    }
+    @include tablet() {
+      width: 288px !important;
+    }
+    @include mobile() {
+      width: 288px !important;
+    }
+    li {
+      a {
+        padding: 10px;
+      }
+    }
+  }
+  hr {
+    margin: 0 !important;
+  }
+  .ideaDevelop {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  .launchGrowth {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+  .tabSpaces {
+    justify-content: space-between;
+    width: 50%;
+  }
+  .navbar-brand,
+  .nav-link {
+    color: white !important;
+  }
+  .navbar-toggler-icon {
+    filter: invert(98%) sepia(2%) saturate(30%) hue-rotate(190deg)
+      brightness(110%) contrast(97%);
+  }
+  .dropdown-menu {
+    a:hover {
+      background-color: #000000;
+      color: white;
+    }
+  }
+}

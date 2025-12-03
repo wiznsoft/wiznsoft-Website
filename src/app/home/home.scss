@@ -1,0 +1,454 @@
+@use "../../variable.scss" as *;
+.homePage {
+  background-color: white;
+  width: 100%;
+  padding-top: 56px;
+  .headingOne {
+    text-align: center;
+    padding: 50px 20px 0 20px;
+  }
+  .section1 {
+    @include ipadpro() {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+    @include ipad() {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+    @include tablet() {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+    @include mobile() {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+
+    .home1 {
+      width: 80%;
+      height: 500px;
+      display: flex;
+      justify-self: center;
+      padding: 30px;
+      @include ipadpro() {
+        width: 100%;
+        height: 400px;
+        padding: 10px;
+      }
+      @include ipad() {
+        width: 100%;
+        height: 400px;
+        padding: 10px;
+      }
+      @include tablet() {
+        width: 100%;
+        height: unset;
+        padding: 10px;
+      }
+      @include mobile() {
+        width: 100%;
+        height: unset;
+        padding: 10px;
+      }
+    }
+  }
+  .section2 {
+    padding: 50px 0;
+    background-color: #f7f7f7;
+    .container {
+      display: flex;
+      @include ipadpro() {
+        display: flex;
+        flex-direction: column-reverse;
+      }
+      @include ipad() {
+        display: flex;
+        flex-direction: column-reverse;
+      }
+      @include tablet() {
+        display: flex;
+        flex-direction: column-reverse;
+      }
+      @include mobile() {
+        display: flex;
+        flex-direction: column-reverse;
+      }
+      h1 {
+        @include ipadpro() {
+          padding: 0 30px;
+          text-align: center;
+        }
+        @include ipad() {
+          padding: 0 30px;
+          text-align: center;
+        }
+        @include tablet() {
+          padding: 0 30px;
+          text-align: center;
+        }
+        @include mobile() {
+          padding: 0 30px;
+          text-align: center;
+        }
+      }
+      .Img2Container {
+        margin: 0 30px;
+        padding: 0 30px;
+        @include ipadpro() {
+          margin: 0;
+          padding: 0;
+        }
+        @include ipad() {
+          margin: 0;
+          padding: 0;
+        }
+        @include tablet() {
+          margin: 0;
+          padding: 0;
+        }
+        @include mobile() {
+          margin: 0;
+          padding: 0;
+        }
+        .home2 {
+          @include ipadpro() {
+            height: unset;
+            padding: 10px;
+          }
+          @include ipad() {
+            height: unset;
+            padding: 10px;
+          }
+          @include tablet() {
+            height: unset;
+            padding: 10px;
+          }
+          @include mobile() {
+            height: unset;
+            padding: 10px;
+          }
+        }
+      }
+      button {
+        padding: 8px 20px;
+        color: white;
+        background-color: #000000;
+        border: none;
+        border-radius: 25px;
+        font-size: 14px;
+        font-weight: 500;
+        @include ipadpro() {
+          margin: 0 30px;
+        }
+        @include ipad() {
+          margin: 0 30px;
+        }
+        @include tablet() {
+          margin: 0 30px;
+        }
+        @include mobile() {
+          margin: 0 30px;
+        }
+      }
+    }
+  }
+  .section3 {
+    padding: 50px 0;
+    .container {
+      display: flex;
+      @include ipadpro() {
+        display: block;
+      }
+      @include ipad() {
+        display: block;
+      }
+      @include tablet() {
+        display: block;
+      }
+      @include mobile() {
+        display: block;
+      }
+      h1 {
+        @include ipadpro() {
+          padding: 0 10px;
+          text-align: center;
+        }
+        @include ipad() {
+          padding: 0 10px;
+          text-align: center;
+        }
+        @include tablet() {
+          padding: 0 10px;
+          text-align: center;
+        }
+        @include mobile() {
+          padding: 0 10px;
+          text-align: center;
+        }
+      }
+      .Img2Container {
+        margin-right: 30px;
+        padding-right: 30px;
+        @include ipadpro() {
+          margin: 0;
+          padding: 0;
+        }
+        @include ipad() {
+          margin: 0;
+          padding: 0;
+        }
+        @include tablet() {
+          margin: 0;
+          padding: 0;
+        }
+        @include mobile() {
+          margin: 0;
+          padding: 0;
+        }
+        .home3 {
+          @include ipadpro() {
+            height: unset;
+            padding: 20px;
+          }
+          @include ipad() {
+            height: unset;
+            padding: 20px;
+          }
+          @include tablet() {
+            height: unset;
+            padding: 20px;
+          }
+          @include mobile() {
+            height: unset;
+            padding: 20px;
+          }
+        }
+      }
+      button {
+        padding: 8px 20px;
+        color: white;
+        background-color: #000000;
+        border: none;
+        border-radius: 25px;
+        font-size: 14px;
+        font-weight: 500;
+        @include ipadpro() {
+          margin: 0 30px;
+        }
+        @include ipad() {
+          margin: 0 30px;
+        }
+        @include tablet() {
+          margin: 0 30px;
+        }
+        @include mobile() {
+          margin: 0 30px;
+        }
+      }
+    }
+  }
+  .section4 {
+    padding-top: 50px;
+    background-color: #f7f7f7;
+    .container {
+      @include ipadpro() {
+        display: flex;
+        flex-direction: column-reverse;
+      }
+      @include ipad() {
+        display: flex;
+        flex-direction: column-reverse;
+      }
+      @include tablet() {
+        display: flex;
+        flex-direction: column-reverse;
+      }
+      @include mobile() {
+        display: flex;
+        flex-direction: column-reverse;
+      }
+    }
+    .headingFour {
+      text-align: center;
+      @include ipadpro() {
+        padding: 0 20px;
+      }
+      @include ipad() {
+        padding: 0 20px;
+      }
+      @include tablet() {
+        padding: 0 20px;
+      }
+      @include mobile() {
+        padding: 0 20px;
+      }
+    }
+    .home4 {
+      width: 80%;
+      height: 500px;
+      display: flex;
+      justify-self: center;
+      padding: 30px;
+      @include ipadpro() {
+        width: 100%;
+        height: 400px;
+        padding: 10px;
+      }
+      @include ipad() {
+        width: 100%;
+        height: 400px;
+        padding: 10px;
+      }
+      @include tablet() {
+        width: 100%;
+        height: unset;
+        padding: 10px;
+      }
+      @include mobile() {
+        width: 100%;
+        height: unset;
+        padding: 10px;
+      }
+    }
+  }
+  .section5 {
+    padding: 50px 0;
+    .container {
+      display: flex;
+      @include ipadpro() {
+        display: flex;
+        flex-direction: column-reverse;
+      }
+      @include ipad() {
+        display: flex;
+        flex-direction: column-reverse;
+      }
+      @include tablet() {
+        display: flex;
+        flex-direction: column-reverse;
+      }
+      @include mobile() {
+        display: flex;
+        flex-direction: column-reverse;
+      }
+      h1 {
+        @include ipadpro() {
+          padding: 0 30px;
+          text-align: center;
+        }
+        @include ipad() {
+          padding: 0 30px;
+          text-align: center;
+        }
+        @include tablet() {
+          padding: 0 30px;
+          text-align: center;
+        }
+        @include mobile() {
+          padding: 0 30px;
+          text-align: center;
+        }
+      }
+      .Img2Container {
+        margin: 0 30px;
+        padding: 0 30px;
+        @include ipadpro() {
+          margin: 0;
+          padding: 0;
+        }
+        @include ipad() {
+          margin: 0;
+          padding: 0;
+        }
+        @include tablet() {
+          margin: 0;
+          padding: 0;
+        }
+        @include mobile() {
+          margin: 0;
+          padding: 0;
+        }
+        .home5 {
+          @include ipadpro() {
+            height: unset;
+            padding: 10px;
+          }
+          @include ipad() {
+            height: unset;
+            padding: 10px;
+          }
+          @include tablet() {
+            height: unset;
+            padding: 10px;
+          }
+          @include mobile() {
+            height: unset;
+            padding: 10px;
+          }
+        }
+      }
+      button {
+        padding: 8px 20px;
+        color: white;
+        background-color: #000000;
+        border: none;
+        border-radius: 25px;
+        font-size: 14px;
+        font-weight: 500;
+        @include ipadpro() {
+          margin: 0 30px;
+        }
+        @include ipad() {
+          margin: 0 30px;
+        }
+        @include tablet() {
+          margin: 0 30px;
+        }
+        @include mobile() {
+          margin: 0 30px;
+        }
+      }
+    }
+  }
+  .section6 {
+    padding: 50px 0;
+    background-color: #f7f7f7;
+    .headingFour {
+      text-align: center;
+    }
+    .connectBtn {
+      display: flex;
+      justify-content: center;
+      button {
+        padding: 10px 38px;
+        color: white;
+        background-color: #000000;
+        border: none;
+        border-radius: 5px;
+        font-size: 14px;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        span {
+          vertical-align: middle;
+          padding-left: 20px;
+        }
+      }
+    }
+  }
+  p {
+    @include ipadpro() {
+      padding: 25px;
+    }
+    @include ipad() {
+      padding: 25px;
+    }
+    @include tablet() {
+      padding: 25px;
+    }
+    @include mobile() {
+      padding: 25px;
+    }
+  }
+}
